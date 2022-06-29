@@ -1,0 +1,26 @@
+Szymon Soltysiak 263495
+Przetwarzanie obrazow 2
+Testy:
+Program byl testowany na plikach Lena.pgm kubus.pgm Claudia.ppm Claudia2.ppm
+Testy z linii komend:
+1) ./a.out -r -> Blad nr -4; Brak pliku wejsciowego
+2) ./a.out -h -> Wyswietlenie pomocy
+3) ./a.out -i Lena.pgm -n -o Lena1.pgm -> zapisany negatyw
+4) ./a.out -i Lena.pgm -o Lena1.pgm -p 50 -> zapisane progwanie
+5) /a.out -i Lena.pgm -o Lena1.pgm -k -> zapisane konturowanie
+6) ./a.out -i Lena.pgm -o Lena1.pgm -z 20 80 -> zapisana zmiana poziomow
+7) ./a.out -i Claudia.ppm -o Claudia.pgm -p -> Blad nr -3 (Brak wartosci progu)
+8) ./a.out -i Claudia.ppm -o Claudia.pgm -p 50 -> zapisane progowanie skonwertowanego pliku
+9) ./a.out -i Claudia.ppm -o Claudia.pgm -z 20 80 -> zapisana zmiana poziomow skonwertowanego pliku
+10) ./a.out -i Claudia2.ppm -o Claudia2.pgm -k -> zapisane konturowanie skonwertowanego pliku
+11) ./a.out -i Claudia.ppm -o Claudia.pgm -r -d -n -> konwersja, negatyw, rozmycie i wyswietlenie
+12) ./a.out -i kubus.pgm -o kubus1.pgm -k -p 50 -> konturownie, progowanie
+Testy w menu (po ./a.out):
+1) losowe opcje -> program je pomija
+2) wczytywanie (dla wszystkich w.w. plikow) dziala poprawnie
+3) zapisywanie pliku Claudia.ppm zapisuje do pliku Claudia1.ppm
+4) zapisywanie pliku kubus.pgm i Claudia.ppm po przetwarzaniu do plikow .pgm 
+5) funkcje testowane
+
+Segmentation fault przy probie konturowania Claudia.ppm i z linii komend i w menu
+Nie wystepowalo przy innych plikach
